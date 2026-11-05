@@ -1,7 +1,5 @@
-#include <iostream>
-#include <cstring>
-#include <vector>
-#include <iomanip>
+#include <Common.h>
+#include <Media.h>
 
 using namespace std;
 
