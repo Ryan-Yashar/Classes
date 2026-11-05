@@ -77,8 +77,29 @@ class Movie : public Media {
     }
     ~Movie() = default;
 };
-void addCommand() {
-  
+void addCommand(vector<Media*>& media_list) {
+  char input[8];
+  cout << "Enter the type of media you'd like to add. Valid types include Game, Movie, and Song. Input: ";
+  cin.get(input, 8);
+  while (cin.get() != '\n') {}
+  for (int i=0; input[i] != '\0'; i++) {
+    if ('a' <= input[i] && 'z' >= input[i]) {
+      input[i] -= 32; //capitalize everything
+    }
+  }
+  if (!strcmp(input, "GAME")) {
+    
+  } else if (!strcmp(input, "MOVIE")) {
+    searchCommand(media_list);
+  } else if (!strcmp(input, "SONG")) {
+    deleteCommand(media_list);
+  } else {
+    cout << "Type \"" << input << "\" not found. Try again.\n";
+  }
+}
+void searchCommand(vector<Media*>& media_list) {
+}
+void delete_command(vector<Media*>& media_list) {
 }
 int main() {
   vector<media> media_list;
