@@ -1,6 +1,6 @@
 #pragma once
-#include <Common.h>
-#include <Media.h>
+#include "Common.h"
+#include "Media.h"
 
 class Game : public Media {
   protected:
@@ -11,4 +11,4 @@ class Game : public Media {
     const char* getPublisher();
     long getRating();
     ~Game();
-}
+};
