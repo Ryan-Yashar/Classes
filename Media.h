@@ -10,4 +10,4 @@ class Media {
     int getYear();
     const char* getTitle();
     virtual ~Media();
-}
+};
