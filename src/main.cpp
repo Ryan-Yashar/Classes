@@ -1,5 +1,5 @@
-#include <Common.h>
-#include <Media.h>
+#include "Common.h"
+#include "Media.h"
 
 using namespace std;
 
@@ -15,11 +15,8 @@ void addCommand(vector<Media*>& media_list) {
     }
   }
   if (!strcmp(input, "GAME")) {
-    
   } else if (!strcmp(input, "MOVIE")) {
-    searchCommand(media_list);
   } else if (!strcmp(input, "SONG")) {
-    deleteCommand(media_list);
   } else {
     cout << "Type \"" << input << "\" not found. Try again.\n";
   }
