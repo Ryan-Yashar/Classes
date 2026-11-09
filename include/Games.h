@@ -5,10 +5,10 @@
 class Game : public Media {
   protected:
     char publisher[51];
-    long rating;
+    float rating;
   public:
-    Game(const char* title, int year, const char* publisher, long rating);
+    Game(const char* title, int year, const char* publisher, float rating);
     const char* getPublisher();
-    long getRating();
+    float getRating();
     ~Game();
 };

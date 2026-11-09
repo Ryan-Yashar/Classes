@@ -6,11 +6,11 @@ class Movie : public Media {
   protected:
     char director[51];
     int duration;
-    long rating;
+    float rating;
   public:
-    Movie(const char* title, const char* director, int year, int duration, long rating);
+    Movie(const char* title, const char* director, int year, int duration, float rating);
     int getDuration();
-    long getRating();
+    float getRating();
     const char* getDirector();
     ~Movie();
 };
