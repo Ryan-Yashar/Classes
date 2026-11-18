@@ -12,5 +12,6 @@ class Movie : public Media {
     int getDuration();
     float getRating();
     const char* getDirector();
+    void printSelf();
     ~Movie();
 };

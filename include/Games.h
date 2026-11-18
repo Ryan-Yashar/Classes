@@ -10,5 +10,6 @@ class Game : public Media {
     Game(const char* title, int year, const char* publisher, float rating);
     const char* getPublisher();
     float getRating();
+    void printSelf();
     ~Game();
 };

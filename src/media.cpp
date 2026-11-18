@@ -10,4 +10,3 @@ int Media::getYear() {
 const char* Media::getTitle() {
   return this->title;
 }
-Media::~Media() = default;

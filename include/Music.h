@@ -12,5 +12,6 @@ class Song : public Media {
     int getDuration();
     const char* getArtist();
     const char* getPublisher();
+    void printSelf();
     ~Song();
 };

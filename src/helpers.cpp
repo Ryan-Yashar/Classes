@@ -1,16 +1,27 @@
 #include "Helpers.h"
 
+void capitalizeInput(char* input) {
+  for (int i=0; input[i] != '\0'; i++) {
+    if ('a' <= input[i] && 'z' >= input[i]) {
+      input[i] -= 32; //capitalize everything
+    }
+  }
+}
 //gets string of n size from cin without blowing things up
 void get(char* buffer, size_t size) {
   cin.get(buffer, size);
   cin.clear();
   while (cin.get() != '\n') {}
 }
-bool verifyCorrect(char* valuetoprint) {
+bool verifyCorrect(char* valuetoprint, bool isAdding) {
   while (true) {
     char correct;
     while (correct != 'y' && correct != 'n') {
-      cout << "Is \"" << valuetoprint << "\" correct? (y/n)";
+      if (isAdding) {
+        cout << "Is \"" << valuetoprint << "\" correct? (y/n)";
+      } else {
+        cout << "Do you want to delete these items? (y/n)";
+      }
       cin.get(correct);
       if (correct != '\n') {
         while (cin.get() != '\n') {}

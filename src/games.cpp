@@ -10,4 +10,7 @@ const char* Game::getPublisher() {
 float Game::getRating() {
   return this->rating;
 }
+void Game::printSelf() {
+  cout << "\"" << this->getTitle() << "\". Year: " << this->getYear() << ". Publisher: " << this->getPublisher() << ". Rating: " << this->getRating() << ".\n";
+}
 Game::~Game() = default;

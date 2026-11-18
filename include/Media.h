@@ -9,5 +9,6 @@ class Media {
     Media(const char* title, int year);
     int getYear();
     const char* getTitle();
-    virtual ~Media();
+    virtual void printSelf() = 0;
+    virtual ~Media() = default;
 };

@@ -13,4 +13,7 @@ float Movie::getRating() {
 const char* Movie::getDirector() {
   return this->director;
 }
+void Movie::printSelf() {
+  cout << "\"" << this->getTitle() << "\". Year: " << this->getYear() << ". Duration: " << this->getDuration() << " seconds. Director: " << this->getDirector() << ". Rating: " << this->getRating() << ".\n";
+}
 Movie::~Movie() = default;

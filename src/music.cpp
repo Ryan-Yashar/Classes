@@ -15,4 +15,7 @@ const char* Song::getArtist() {
 const char* Song::getPublisher() {
   return this->publisher;
 }
+void Song::printSelf() {
+  cout << "\"" << this->getTitle() << "\". Year: " << this->getYear() << ". Duration: " << this->getDuration() << " seconds. Artist: " << this->getArtist() << ". Publisher: " << this->getPublisher() << ".\n";
+}
 Song::~Song() = default;
