@@ -1,3 +1,7 @@
+/*
+Classes by Ryan Yashar
+program that allows for adding different types of media to a database, searching that database (via year or title), and deleting items from that database
+  */
 #include "Common.h"
 #include "Media.h"
 #include "Games.h"
